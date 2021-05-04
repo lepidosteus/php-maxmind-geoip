@@ -40,7 +40,7 @@ class Maxmind
         }
 
         $executableFinder = new \Symfony\Component\Process\ExecutableFinder();
-        $binary = $executableFinder->find($this->config->lookup_binary());
+        $binary = $executableFinder->find($this->config->lookup_binary(), null, ['/usr/bin']);
         if (!$binary) {
             throw new \RuntimeException('Could not find the lookup binary');
         }
