@@ -1,0 +1,23 @@
+{
+    "name": "lepidosteus/php-maxmind-geoip",
+    "description": "Runs geoip checks against maxmind's database",
+    "keywords": ["lepidosteus", "geoip", "maxmind"],
+    "license": "Unlicense",
+    "authors": [
+        {
+            "name": "Lepidosteus",
+            "email": "lepidosteus@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "php": ">=8.0",
+        "symfony/process": ">=5.2",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lepidosteus\\Geoip\\": "src/"
+        }
+    }
+}
